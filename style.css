@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f7443e;
+}
+
+/* Profile Section */
+.profile {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Social Media Links Styling */
+.social-links a {
+    margin: 0 7px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 25px;  /* Adjust the width to make the icons smaller */
+    height: 25px; /* Adjust the height to maintain the aspect ratio */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Invert colors of the SVGs */
+.social-links img {
+    filter: invert(1);  /* Inverts the black color to white */
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+    filter: invert(0.8);  /* Lightens the color on hover */
+}
